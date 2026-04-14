@@ -205,3 +205,518 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# =============================================================================
+# .gitignore — Comprehensive Template
+# Covers: Python · C/C++ · HTML/CSS/PHP/Web · ROS 2 · ML/AI · Robotics
+#         Raspberry Pi · Secrets & Credentials · OS & Editor files
+# =============================================================================
+
+
+# =============================================================================
+# SECRETS & CREDENTIALS — Never commit these
+# =============================================================================
+.env
+.env.*
+.env.local
+.env.development
+.env.staging
+.env.production
+*.env
+
+# API keys, tokens, credentials
+secrets.py
+secrets.yaml
+secrets.yml
+secrets.json
+config/secrets.*
+credentials.json
+credentials.yaml
+token.json
+auth.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Password / config files that may contain sensitive data
+config.ini
+config.cfg
+local_settings.py
+private_settings.py
+
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+virtualenv/
+.virtualenv/
+pipenv/
+poetry.lock
+Pipfile.lock
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+*.whl
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Unit test / coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Profiling
+*.prof
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Spyder
+.spyderproject.db
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs
+/site
+
+
+# =============================================================================
+# C / C++
+# =============================================================================
+
+# Compiled object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Compiled shared/static libraries
+*.lib
+*.a
+*.la
+*.lo
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# CMake build artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+cmake-build-debug/
+cmake-build-release/
+Makefile
+CTestTestfile.cmake
+_deps/
+build/
+out/
+
+# Autotools
+.deps/
+.libs/
+autom4te.cache/
+config.status
+config.log
+configure
+aclocal.m4
+
+# Clang tools
+.clangd/
+.clang-tidy
+compile_commands.json
+
+# Linker map files
+*.map
+
+
+# =============================================================================
+# WEB — HTML / CSS / JavaScript / PHP
+# =============================================================================
+
+# Node.js / npm / yarn
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+.pnp.*
+package-lock.json
+yarn.lock
+
+# Build output
+dist/
+build/
+public/build/
+.next/
+.nuxt/
+.output/
+.cache/
+
+# PHP
+vendor/
+composer.lock
+.composer/
+
+# PHP environment / framework
+.env.php
+storage/
+bootstrap/cache/
+*.log
+
+# Sass / LESS compiled output
+*.css.map
+*.sass-cache/
+.sass-cache/
+
+# Bower
+bower_components/
+
+# Grunt / Gulp build artifacts
+.grunt/
+
+# TypeScript
+*.js.map
+*.d.ts
+tsconfig.tsbuildinfo
+
+# Web server config (often environment-specific)
+.htaccess
+nginx.conf
+apache2.conf
+
+# WordPress (if applicable)
+wp-config.php
+
+# Uploaded user content (should live on object storage, not in repo)
+uploads/
+media/
+
+
+# =============================================================================
+# DATABASES
+# =============================================================================
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.sql
+*.dump
+*.mdb
+
+
+# =============================================================================
+# ROS 2
+# =============================================================================
+
+# Build, install, and log directories (colcon output)
+build/
+install/
+log/
+
+# ROS bag recordings (can be gigabytes)
+*.bag
+*.db3
+
+# ROS generated message/service/action code
+devel/
+.catkin_workspace
+
+# Gazebo model cache
+~/.gazebo/
+
+
+# =============================================================================
+# MACHINE LEARNING / AI — Model weights & training artifacts
+# =============================================================================
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# TensorFlow / Keras
+*.h5
+*.hdf5
+*.pb
+saved_model/
+*.tflite
+*.tfrecord
+
+# ONNX
+*.onnx
+
+# General model files
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.weights
+checkpoints/
+
+# Ultralytics YOLOv8 training output
+runs/
+
+# Dataset directories (usually too large for git; use DVC or similar)
+datasets/
+data/raw/
+data/processed/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+
+
+# =============================================================================
+# RASPBERRY PI / EMBEDDED / ROBOTICS
+# =============================================================================
+
+# Compiled Python C extensions
+*.so
+
+# MicroPython compiled bytecode
+*.mpy
+
+# Firmware binaries
+*.bin
+*.uf2
+*.hex
+*.firmware
+
+# Sensor data recordings / logs
+recordings/
+sensor_logs/
+*.csv_backup
+
+# OpenCV calibration output
+calibration_data/
+camera_calibration.xml
+calibration.yaml
+
+# pigpio scripts
+*.pigs
+
+
+# =============================================================================
+# LOGS & TEMPORARY FILES
+# =============================================================================
+*.log
+*.log.*
+logs/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+
+
+# =============================================================================
+# DATA FILES — Typically too large or generated
+# =============================================================================
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.json.gz
+*.npy
+*.npz
+*.mat
+*.hdf
+
+# EXCEPTIONS — uncomment these if you DO want to track small reference data
+# !data/reference/*.csv
+# !config/*.json
+
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.Trash-*
+.nfs*
+
+
+# =============================================================================
+# EDITORS & IDEs
+# =============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains (PyCharm, CLion, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+Session.vim
+.netrwhist
+tags
+
+# Emacs
+*~
+\#*\#
+.\#*
+.emacs.desktop
+.emacs.desktop.lock
+
+# Eclipse
+.project
+.classpath
+.settings/
+.loadpath
+
+# Notepad++
+npp_backup/
+
+
+# =============================================================================
+# DOCKER
+# =============================================================================
+.docker/
+docker-compose.override.yml
+.dockerignore
+
+
+# =============================================================================
+# MISCELLANEOUS
+# =============================================================================
+
+# Archives (usually not source code)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Large media files (use Git LFS instead if needed)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.mp3
+*.wav
+*.flac
+
+# Office / PDF output (generated, not source)
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# Thumbnails
+*.thumb
