@@ -1,2 +1,2 @@
 # Dumb hello world example
-print('Hello Cruel World')
+print('Hello World')
